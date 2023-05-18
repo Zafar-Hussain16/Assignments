@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+void main()
+{
+	float p,r,t,a,si,ci;
+	printf("enter the principal=");
+	scanf("%f",&p);
+	printf("enter the rate=");
+	scanf("%f",&r);
+	printf("enter the time=");
+	scanf("%f",&t);
+	si=(p*r*t)/100;
+	printf("simple interest=%f",si);
+	a=p*(pow((1+r/100),t));
+	ci=a-p;
+	printf("\n compound interest is %f",ci);
+	getch();
+	
+}
